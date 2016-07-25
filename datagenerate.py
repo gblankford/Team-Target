@@ -1,4 +1,3 @@
-I'm just making changes to this guy.
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jul 22 11:26:01 2016
