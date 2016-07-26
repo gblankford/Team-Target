@@ -1,15 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Jul 22 11:26:01 2016
-
-@author: ando
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 22 10:37:12 2016
-
-@author: ando
+George's version of data generator
 """
 
 import numpy as np
@@ -25,6 +15,7 @@ def datagenerator(n1,n2,n3,n4):
     
     n = np.sum([n1,n2,n3,n4]) # number of parameters: cookies1, cookies2, ID1, ID2, email1, email2
                            #email1, email2
+    print(n)
 
     mat = np.zeros((n,n))
 
@@ -71,6 +62,8 @@ def datagenerator(n1,n2,n3,n4):
             if j>i :
                 mat[j,i]=mat[i,j]
     
+    print(mat)
+    
             
     return(mat)
     
@@ -84,7 +77,7 @@ import matplotlib.pyplot as plt
 
 A = datagenerator(1,1,1,1)
 
-print(mat)
+print(A)
 
 G=nx.from_numpy_matrix(A)
 
